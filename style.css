@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background.jpg);
+   
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: white;
+    margin-top: 50px;
+    text-shadow: -2px 2px 0 #000,
+                          2px 2px 0 #000,
+                         2px -2px 0 #000,
+                        -2px -2px 0 #000;
+                        
+    
+}
+
+.cloud-1{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 300px;
+}
+
+.cloud-2{
+    height: 250px;
+    position:absolute ;
+    left: 70%;
+    top: 50%;
+	
+}
+.cloud-3{
+    height: 250px;
+    position:absolute ;
+    left: 30%;
+    top: 50%;
+	
+}
+.cloud-4{
+    height: 250px;
+    position:absolute ;
+    left: 80%;
+    top: 10%;
+	
+}
+
+.plane img{
+    height: 500px;
+    position:absolute ;
+    bottom: 20%;
+    left: -30%;
+    animation: plane2Anim 10s infinite linear;
+}
+
+@keyframes plane2Anim{
+    0%{
+        bottom:0%;
+        left: -30%;
+    }
+    /* left value will be constant at 45% to 55% */
+   
+    100%{
+        left: 110%;
+        bottom: 50%;
+    }
+}
+.plane2 img{
+    height: 300px;
+    position:absolute ;
+    bottom: 20%;
+    left: -30%;
+    animation: planeAnim 12s infinite linear;
+    -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+}
+
+@keyframes planeAnim{
+    0%{
+        bottom:10%;
+        left: 110%;
+    }
+    
+    100%{
+        left: -30%;
+        bottom: 60%;
+    }
+}
+.plane3 img{
+    height: 250px;
+    position:absolute ;
+    bottom: -10%;
+    left: -30%;
+    animation: plane3Anim 8s infinite linear;
+    -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+animation-delay: 1s;
+}
+
+@keyframes plane3Anim{
+    0%{
+        bottom:-10%;
+        left: 110%;
+    }
+    
+    100%{
+        left: -30%;
+        bottom: 80%;
+    }
+}
